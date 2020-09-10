@@ -1,10 +1,10 @@
 # Ng1-table-list
-Component table-list base on the angular1.6.x
+Component ng-table-list base on the angular1.6.x
 # Installation
 Using npm:
 ```
   $ npm i -g npm
-  $ npm i -D table-list
+  $ npm i -D ng-table-list
 ```
 In index.html
 ```
@@ -12,13 +12,13 @@ In index.html
 <!-- ... -->
 
 <div ng-app="app" ng-controller="myCtrl">
-  <table-list 
+  <ng-table-list 
     show-index="true"
     show-hover="true"
     title="'tableTitle'"
     table-attr="tableHead"
     data="data">
-  </table-list>
+  </ng-table-list>
 </div>
 
 <!-- ... -->
@@ -27,7 +27,7 @@ In index.html
 In main.js:
 ```
 import angular from 'angular';
-import { GenerateComponent } from 'table-list';
+import { GenerateComponent } from 'ng-table-list';
 
 GenerateComponent(
   angular.module('app', [ /*...*/ ])
