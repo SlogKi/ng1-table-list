@@ -1,6 +1,5 @@
 "use strict";
-const path = require("path"),
-  { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require("path");
 
 let webpackConf = {
   mode: 'production',
@@ -19,13 +18,7 @@ let webpackConf = {
         include: /tableList.html/
       }
     ]
-  },
-  plugins: [
-    new CleanWebpackPlugin({
-      verbose: true,
-      cleanStaleWebpackAssets: false // Automatically remove all unused webpack assets on rebuild
-    })
-  ]
+  }
 };
 
 module.exports = webpackConf;

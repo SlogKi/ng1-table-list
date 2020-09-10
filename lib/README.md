@@ -1,13 +1,5 @@
 # Ng1-table-list
 Easy table only use one list config
-# Development
-```
-  $ cd ng1-table-list
-  $ npm i
-  $ npm run build:npm
-  $ cd lib
-  $ npm publish
-```
 # Installation
 Using npm:
 ```
