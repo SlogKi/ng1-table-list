@@ -4,13 +4,14 @@ const path = require("path"),
   { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 let webpackConf = {
+  mode: 'development',
   entry: "./test/index.js",
   output: {
-    path: path.resolve("./lib"),
+    path: path.resolve("./dist"),
     filename: "bundle.js",
   },
   devServer: {
-    contentBase: path.resolve("./lib"),
+    contentBase: path.resolve("./dist"),
     compress: true,
     host: "0.0.0.0",
     port: 5750,

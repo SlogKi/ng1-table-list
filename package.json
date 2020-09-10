@@ -5,6 +5,7 @@
   "main": "dist/tableList.min.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --config webpack.dev.js",
+    "build:test": "webpack --display-error-details --config webpack.dev.js",
     "build:npm": "webpack --display-error-details --config webpack.npm.js"
   },
   "repository": {
