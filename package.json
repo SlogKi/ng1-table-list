@@ -1,0 +1,29 @@
+{
+  "name": "table-list",
+  "version": "1.0.0",
+  "description": "base on the angular1.6.5",
+  "main": "dist/tableList.min.js",
+  "scripts": {
+    "dev": "webpack-dev-server --progress --config webpack.dev.js",
+    "build:npm": "webpack --display-error-details --config webpack.npm.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/cloudcodesource/cloud.git"
+  },
+  "keywords": [
+    "angular1.x",
+    "table-list",
+    "component"
+  ],
+  "author": "Slogki",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.4.1",
+    "raw-loader": "^4.0.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

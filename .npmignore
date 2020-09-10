@@ -1,6 +1,12 @@
+.*
+*.md
+*.yml
 .idea
 .DS_Store
 .vscode
+.gitignore
+gulpfile.js
 npm-debug.log
-dist/
+src/
+test/
 node_modules/

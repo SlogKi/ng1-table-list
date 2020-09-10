@@ -1,0 +1,81 @@
+<div class="container-title" ng-if="!!$ctrl.title">{{ $ctrl.title }}</div>
+<div class="table-container">
+  <div class="row">
+    <div class="col-xs-12 overflow-x">
+      <table class="table tb">
+        <tr class="tb-head ellipsis">
+          <th ng-if="$ctrl.showIndex"></th>
+          <th 
+            ng-repeat="table in $ctrl.tableAttr"
+            ng-class="{ 'active-color': table.isActive }">
+            {{ table.title || table.placeholder }}
+            <i
+              ng-if="table.slot"
+              class="{{ table.slot.class }}"
+              tooltip-placement="{{ table.slot.placement }}" 
+              uib-tooltip="{{ table.slot.tooltip }}"></i>
+          </th>
+        </tr>
+        <tr 
+          class="tb-body" 
+          ng-class="{ 'tr-hover': $ctrl.showHover }"
+          ng-show="$ctrl.data.length > 0"
+          ng-repeat="item in $ctrl.data">
+          <td ng-if="$ctrl.showIndex">{{ $index + 1 }}</td>
+          <td 
+            ng-repeat="table in $ctrl.tableAttr" 
+            ng-class="{ 'active-color-hover': table.handleClick }"
+            ng-click="table.handleClick(item)">{{ item[table.key] }}</td>
+        </tr>
+        <tr class="tb-body text-center" ng-show="$ctrl.data.length == 0">
+          <td colspan="{{ $ctrl.tableAttr.length }}">暂无数据</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<style>
+.table-container {
+  background-color: #fff;
+  padding: 1.5rem 2.08333333rem;
+  margin: .83333333rem 1.25rem;
+  color: #204659;
+}
+.container-title {
+  background-color: #fff;
+  padding: 1.5rem 2.08333333rem;
+  margin: .83333333rem 1.25rem;
+  color: #204659;
+  font-weight: 700;
+  border-bottom: 1px solid #e2ebef;
+  margin-bottom: -.83333333rem;
+  box-shadow: 0 2px 2px rgba(143,150,164,.1);
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.overflow-x {
+  overflow-x: auto;
+  position: relative;
+}
+.tb {
+  border-collapse: separate;
+}
+.tb .tb-head {
+  background: #eef3fc;
+  color: #868ea2;
+}
+.tr-hover:hover {
+  background-color: #f7f8fa;
+}
+.active-color-hover {
+  color: #fd8900;
+  cursor: pointer;
+}
+.active-color-hover:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+</style>
