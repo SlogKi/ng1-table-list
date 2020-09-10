@@ -1,33 +1,38 @@
 'use strict';
 import angular from 'angular';
-import { GenerateComponent } from '../lib/tableList.min.js';
+import { GenerateComponent } from '../src/tableList';
 
 GenerateComponent(
   angular.module('app', [])
   .controller('myCtrl', function($scope) {
     $scope.tableAttr = [
-      { title: '销售时间', key: 'time', placeholder: '-' },
-      { title: '销售数量', key: 'count', placeholder: '-' },
-      { title: '销售集团', key: 'group', placeholder: '-' },
-      { title: '销售门店', key: 'store', placeholder: '-' },
-      { title: '销售人员', key: 'saler', placeholder: '-' },
+      { title: 'th1', key: 'key1', placeholder: '-' },
+      { title: 'th2', key: 'key2', placeholder: '-' },
+      { title: 'th3', key: 'key3', placeholder: '-' },
+      { title: 'th4', key: 'key4', placeholder: '-' },
       { 
-        title: '审批单号', 
-        key: 'businessKey', 
+        title: 'th5', 
+        key: 'key5', 
+        placeholder: '-',
+        slot: { tooltip: 'tooltip12321', class: "iconfont icon-tixing", placement: 'bottom' },
+      },
+      { 
+        title: 'th6', 
+        key: 'key6', 
         placeholder: '-', 
-        handleClick: function(item) {
-          console.log(item)
+        handleClick: function(param) {
+          console.log(param)
         } 
       }
     ]
     $scope.data = [
       {
-        time: '2020-01-03',
-        count: '6',
-        group: '集团1',
-        store: '门店1',
-        saler: '销售1',
-        businessKey: '200907110947004364',
+        key1: 'value1',
+        key2: 'value2',
+        key3: 'value3',
+        key4: 'value4',
+        key5: 'value5',
+        key6: 'value6',
       }
     ]
   })

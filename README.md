@@ -1,5 +1,5 @@
 # Ng1-table-list
-Component ng-table-list base on the angular1.6.x
+Easy table only use one list config
 # Installation
 Using npm:
 ```
@@ -66,4 +66,4 @@ See the [package source](https://github.com/SlogKi/ng1-table-list/tree/master) f
 Note:
 angular1.js >= 1.6.5
 # Keywords
-modules component
+modules component ng-table-list angular1.x boostrap component table iconfont

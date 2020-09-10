@@ -1,7 +1,7 @@
 {
   "name": "ng-table-list",
-  "version": "1.0.1",
-  "description": "base on the angular1.6.5",
+  "version": "1.0.0",
+  "description": "Easy table component only use one list config",
   "main": "lib/tableList.min.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --config webpack.dev.js",
@@ -13,9 +13,12 @@
     "url": "https://github.com/SlogKi/ng1-table-list.git"
   },
   "keywords": [
+    "ng-table-list",
     "angular1.x",
-    "table-list",
-    "component"
+    "boostrap",
+    "component",
+    "table",
+    "iconfont"
   ],
   "author": "Slogki",
   "license": "MIT",
