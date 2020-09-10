@@ -65,9 +65,8 @@ GenerateComponent(
 ```
 See the [package source](https://github.com/SlogKi/ng1-table-list/tree/master) for more details.
 
-Note:
-
-
+Note:  
 angular1.js >= 1.6.5
 # Keywords
-modules component ng-table-list angular1.x boostrap component table iconfont ui-bootstrap-tpls
+modules component ng-table-list  
+angular1.x boostrap table iconfont ui-bootstrap-tpls
