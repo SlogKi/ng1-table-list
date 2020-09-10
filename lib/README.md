@@ -9,6 +9,7 @@ Using npm:
 In index.html
 ```
 <link rel="stylesheet" href="//sjs.wuuxiang.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+<link href="//at.alicdn.com/t/font_280837_a34dgsbk9uc.css" rel="stylesheet">
 <!-- ... -->
 
 <div ng-app="app" ng-controller="myCtrl">
