@@ -2,7 +2,7 @@
   "name": "ng-table-list",
   "version": "1.0.1",
   "description": "base on the angular1.6.5",
-  "main": "dist/tableList.min.js",
+  "main": "lib/tableList.min.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --config webpack.dev.js",
     "build:test": "webpack --display-error-details --config webpack.dev.js",
