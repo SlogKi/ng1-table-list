@@ -3,7 +3,7 @@ import angular from 'angular';
 import { GenerateComponent } from '../src/tableList';
 
 GenerateComponent(
-  angular.module('app', [])
+  angular.module('app', ['ui.bootstrap'])
   .controller('myCtrl', function($scope) {
     $scope.tableAttr = [
       { title: 'th1', key: 'key1', placeholder: '-' },
