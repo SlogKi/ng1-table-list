@@ -2,7 +2,7 @@
   "name": "ng-table-list",
   "version": "1.0.0",
   "description": "Easy table component only use one list config",
-  "main": "./tableList.min.js",
+  "main": "tableList.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/SlogKi/ng1-table-list.git"

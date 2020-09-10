@@ -2,7 +2,7 @@
   "name": "ng-table-list",
   "version": "1.0.0",
   "description": "Easy table component only use one list config",
-  "main": "lib/tableList.min.js",
+  "main": "test/index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --config webpack.dev.js",
     "build:test": "webpack --display-error-details --config webpack.dev.js",
