@@ -8,5 +8,5 @@
 gulpfile.js
 npm-debug.log
 src/
-test/
+dist/
 node_modules/

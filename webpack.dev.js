@@ -6,11 +6,11 @@ const path = require("path"),
 let webpackConf = {
   entry: "./test/index.js",
   output: {
-    path: path.resolve("./dist"),
+    path: path.resolve("./lib"),
     filename: "bundle.js",
   },
   devServer: {
-    contentBase: path.resolve("./dist"),
+    contentBase: path.resolve("./lib"),
     compress: true,
     host: "0.0.0.0",
     port: 5750,

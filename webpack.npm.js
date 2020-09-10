@@ -6,7 +6,7 @@ let webpackConf = {
   mode: 'production',
   entry: "./src/tableList.js",
   output: {
-    path: path.resolve("./dist"),
+    path: path.resolve("./lib"),
     filename: "tableList.min.js",
     libraryTarget: 'umd',
     umdNamedDefine: true

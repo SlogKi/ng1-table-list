@@ -1,6 +1,6 @@
 'use strict';
 import angular from 'angular';
-import { GenerateComponent } from '../src/tableList.js';
+import { GenerateComponent } from '../lib/tableList.min.js';
 
 GenerateComponent(
   angular.module('app', [])
