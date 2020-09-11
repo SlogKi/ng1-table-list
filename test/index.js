@@ -1,6 +1,7 @@
 'use strict';
 import angular from 'angular';
 import { GenerateComponent } from '../src/tableList';
+import { toFixedN } from 'slo-tool-lib';
 
 GenerateComponent(
   angular.module('app', ['ui.bootstrap'])
@@ -35,5 +36,9 @@ GenerateComponent(
         key6: 'value6',
       }
     ]
+    $scope.input = 123
+    $scope.handleInput = function(val) {
+      $scope.input = toFixedN(val);
+    }
   })
 );
