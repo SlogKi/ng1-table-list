@@ -28,7 +28,7 @@
     "html-webpack-plugin": "^4.4.1",
     "ng-table-list": "^1.0.0",
     "raw-loader": "^4.0.1",
-    "slo-tool-lib": "^1.0.1",
+    "slo-tool-lib": "^1.1.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"

@@ -2,8 +2,8 @@
 import angular from 'angular';
 import { GenerateComponent } from '../src/tableList';
 // import { GenerateComponent } from 'ng-table-list';
-// const { GenerateComponent } = require('ng-table-list');
-import { toFixedN } from 'slo-tool-lib';
+// const { GenerateComponent, GetQueryStr, CreateStrategy } = require('ng-table-list');
+import { toFixedN, GetQueryStr, CreateStrategy } from 'slo-tool-lib';
 
 GenerateComponent(
   angular.module('app', ['ui.bootstrap'])
@@ -42,5 +42,18 @@ GenerateComponent(
     $scope.handleInput = function(val) {
       $scope.input = toFixedN(val);
     }
+    var qs = new GetQueryStr(window.location.search)
+    $scope.hasKey = qs.has('a')
+    $scope.getVal = qs.get('a')
+    $scope.urlObj = qs.get()
+    
+    var a = new CreateStrategy()
+    a.add('a1', (a,b,c) => { console.log(`a1 param:${a}${b}${c}`) }).add('a2', () => { console.log('a2') })
+    console.log(`has a1: ${a.has('a1')}`)
+    a.add('a3').modify('a3', () => console.log('a3'))
+    a.toDo('a1', 1,2,3)
+    a.toDo('a2')
+    var b = a.remove().get()
+    console.log({b})
   })
 );
