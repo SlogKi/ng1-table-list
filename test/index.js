@@ -1,8 +1,8 @@
 'use strict';
 import angular from 'angular';
-// import { GenerateComponent } from '../src/tableList';
+import { GenerateComponent } from '../src/tableList';
 // import { GenerateComponent } from 'ng-table-list';
-const { GenerateComponent } = require('ng-table-list');
+// const { GenerateComponent } = require('ng-table-list');
 import { toFixedN } from 'slo-tool-lib';
 
 GenerateComponent(
