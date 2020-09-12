@@ -1,5 +1,5 @@
 {
-  "name": "ng-table-list",
+  "name": "ng1-table-list",
   "version": "1.0.0",
   "description": "Easy table component only use one list config",
   "main": "test/index.js",
@@ -26,6 +26,7 @@
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^4.4.1",
+    "ng-table-list": "^1.0.0",
     "raw-loader": "^4.0.1",
     "slo-tool-lib": "^1.0.1",
     "webpack": "^4.44.1",

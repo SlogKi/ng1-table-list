@@ -10,8 +10,13 @@
 	<title><%= htmlWebpackPlugin.options.title %></title>
 	<link rel="stylesheet" href="//sjs.wuuxiang.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 	<link href="//at.alicdn.com/t/font_280837_a34dgsbk9uc.css" rel="stylesheet">
+	<style>
+		.app-container .container-title {
+			color: #afa;
+		}
+	</style>
 </head>
-<body ng-app="app" ng-controller="myCtrl">
+<body ng-app="app" ng-controller="myCtrl" class="app-container">
 	<table-list 
 		show-index="false"
 		show-hover="true"
