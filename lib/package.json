@@ -1,6 +1,6 @@
 {
   "name": "ng-table-list",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easy table component only use one list config",
   "main": "tableList.min.js",
   "repository": {
