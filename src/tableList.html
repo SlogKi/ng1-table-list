@@ -1,7 +1,7 @@
 <div class="container-title" ng-if="!!$ctrl.title">{{ $ctrl.title }}</div>
-<div class="table-container">
+<div class="s1-container">
   <div class="row">
-    <div class="col-xs-12 overflow-x">
+    <div class="col-xs-12 trading-position">
       <table class="table tb">
         <tr class="tb-head ellipsis">
           <th ng-if="$ctrl.showIndex"></th>
@@ -34,48 +34,3 @@
     </div>
   </div>
 </div>
-<style>
-.table-container {
-  background-color: #fff;
-  padding: 1.5rem 2.08333333rem;
-  margin: .83333333rem 1.25rem;
-  color: #204659;
-}
-.container-title {
-  background-color: #fff;
-  padding: 1.5rem 2.08333333rem;
-  margin: .83333333rem 1.25rem;
-  color: #204659;
-  font-weight: 700;
-  border-bottom: 1px solid #e2ebef;
-  margin-bottom: -.83333333rem;
-  box-shadow: 0 2px 2px rgba(143,150,164,.1);
-}
-.ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.overflow-x {
-  overflow-x: auto;
-  position: relative;
-}
-.tb {
-  border-collapse: separate;
-}
-.tb .tb-head {
-  background: #eef3fc;
-  color: #868ea2;
-}
-.tr-hover:hover {
-  background-color: #f7f8fa;
-}
-.active-color-hover {
-  color: #fd8900;
-  cursor: pointer;
-}
-.active-color-hover:hover {
-  color: #23527c;
-  text-decoration: underline;
-}
-</style>

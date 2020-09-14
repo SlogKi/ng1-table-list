@@ -11,12 +11,52 @@
 	<link rel="stylesheet" href="//sjs.wuuxiang.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 	<link href="//at.alicdn.com/t/font_280837_a34dgsbk9uc.css" rel="stylesheet">
 	<style>
-		.app-container .container-title {
-			color: #afa;
-		}
+	.s1-container {
+		background-color: #fff;
+		padding: 1.5rem 2.08333333rem;
+		margin: .83333333rem 1.25rem;
+		color: #204659;
+	}
+	.container-title {
+		background-color: #fff;
+		padding: 1.5rem 2.08333333rem;
+		margin: .83333333rem 1.25rem;
+		color: #204659;
+		font-weight: 700;
+		border-bottom: 1px solid #e2ebef;
+		margin-bottom: -.83333333rem;
+		box-shadow: 0 2px 2px rgba(143,150,164,.1);
+	}
+	.ellipsis {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.trading-position {
+		overflow-x: auto;
+		position: relative;
+	}
+	.tb {
+		border-collapse: separate;
+	}
+	.tb .tb-head {
+		background: #eef3fc;
+		color: #868ea2;
+	}
+	.tr-hover:hover {
+		background-color: #f7f8fa;
+	}
+	.active-color-hover {
+		color: #fd8900;
+		cursor: pointer;
+	}
+	.active-color-hover:hover {
+		color: #23527c;
+		text-decoration: underline;
+	}
 	</style>
 </head>
-<body ng-app="app" ng-controller="myCtrl" class="app-container">
+<body ng-app="app" ng-controller="myCtrl">
 	<table-list 
 		show-index="false"
 		show-hover="true"
@@ -24,7 +64,7 @@
 		table-attr="tableAttr"
 		data="data">
 	</table-list>
-	<div class="table-container">
+	<div class="s1-container">
 		<div class="row">
 			<div class="col-xs-12">
 				<input 
@@ -35,7 +75,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="table-container">
+	<div class="s1-container">
 		<div class="row">
 			<div class="col-xs-4">
 				{{ urlObj }}
